@@ -20,7 +20,26 @@ class Solution(object):
                          digits[len(digits)-x-1]= digits[len(digits)-x-1]+1
                          break
                      
-                     
             else:
                 digits[len(digits)-1]=digits[len(digits)-1]+1
         return(digits)
+
+    
+    
+#别璐莎的方法    
+    class Solution(object):
+    def plusOne(self, digits):
+        """
+        :type digits: List[int]
+        :rtype: List[int]
+        """
+        b=''.join([str(i) for i in digits])
+        type(b)
+        c=int(b)
+        d=c+1
+        e=str(d)
+        f=list(e)
+        g=[]
+        for i in f:
+            g.append(int(i))
+        return(g)
